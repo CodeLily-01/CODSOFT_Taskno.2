@@ -74,32 +74,42 @@
 
   /* Hero Section */
 
-
-
   .hero {
       background: linear-gradient(135deg, #f5f3f0 0%, #e8e4df 100%);
-      padding: 120px 0 80px;
+      padding: 80px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
 
+  .container-hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      flex-wrap: wrap;
+  }
+
+  .hero-text {
+      flex: 1;
+      min-width: 300px;
+  }
 
   .hero h1 {
-      font-size: 95px;
+      font-size: 64px;
       color: #8B7B9B;
       margin-bottom: 20px;
       font-family: "Italianno", cursive;
   }
 
-  .hero-text{
-    
-  }
-
   .hero p {
       font-size: 18px;
       color: #666;
-      max-width: 600px;
-      margin: 0 auto 40px;
+      max-width: 500px;
       line-height: 1.8;
-      
+      margin-bottom: 30px;
   }
 
   .btn-primary {
@@ -121,22 +131,22 @@
   }
 
   .hero-image {
-      margin-top: 60px;
-      max-width: 500px;
-      width: 100%;
+      flex: 1;
       display: flex;
-      justify-content: flex-start;
-      margin: 400px;
+      justify-content: center;
+      align-items: center;
+      min-width: 300px;
   }
 
-  .bouquet-image {
-            width: 100%;
-            height: 300px;
-            border-radius: 10px;
-        }
+  .bouquet-image img {
+      width: 700px;
+      max-width: 900px;
+      height: 800px;
+      border-radius: 10px;
+  }
 
 
-        
+
   /* Why Choose Us Section */
   .why-choose {
       background: #6B5B7B;
@@ -163,8 +173,8 @@
   }
 
   .feature-icon {
-      width: 60px;
-      height: 60px;
+      width: 70px;
+      height: 70px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 50%;
       margin: 0 auto 20px;
@@ -172,6 +182,10 @@
       align-items: center;
       justify-content: center;
       font-size: 24px;
+  }
+
+  .feature-icon img {
+      height: 40px;
   }
 
   .feature h3 {
